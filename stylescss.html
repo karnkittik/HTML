@@ -5,16 +5,39 @@
 <title>CSS</title>
 <!--Internal CSS-->
 <style>
-    body {background-color: powderblue;}
-    h1 {color: rgb(76, 0, 255);}
-    p {color:brown;}
+    body {
+        background-color: powderblue;
+        color:crimson;
+    }
+    h1 {
+        color: rgb(76, 0, 255);
+        margin:50px;
+        font-size: 300%;
+    }
+    p {
+        color:brown;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1px solid powderblue;
+        padding: 30px;
+    }
+    #p01 {
+        color:darkslategrey;
+    }
+    p.error {
+        color:fuchsia;
+    }
 </style>
+<!--External CSS-->
+<!--link rel="stylesheet" href="styles.css"-->
+   
 </head>
 
 <body>
 <h1>This is a heading</h1>
 <p>This is a paragraph</p>
-
+This is body<br>
+<p id="p01">I am different</p>
+<p class="error">I am also different</p>
 </body>
 
 </html>
