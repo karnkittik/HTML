@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Links</title>
+<!--Link Colors-->
+<!--<style>
+a:link {
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>-->
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body style="background-color: tan;">
+<!--Link text-->
+<a href="https://www.google.com">link text</a>
+<!--Local links-->
+<a href="img1.png" >HTML images</a>
+<!--Target attribute-->
+<a href="https://www.google.com" target="_blank">blank</a>
+<a href="https://www.google.com" target="_self">self</a><!--Default-->
+<a href="https://www.google.com" target="_parent">parent</a>
+<a href="https://www.google.com" target="_top">top</a>
+<!--Image as link-->
+<a href="https://www.google.com">
+<img src="img1.png" alt="sample" style="width:42px;height:42px;border:0;">
+</a>
+<!--Tooltip-->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<a href="stylescss.html#p01">Jump to p01</a>
+</body>
+</html>
