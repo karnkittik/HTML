@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Title-->
+<title>HEAD</title> 
+<!--Style-->
+<style>
+body {background-color: powderblue;}
+h1 {color: red;}
+p {color: blue;}
+</style>
+<!--Link-->
+<link rel="stylesheet" href="mystyle.css">
+<!--Meta-->
+<!--Define the character set used-->
+<meta charset="UTF-8">
+<!--Define a description of your web page-->
+<meta name="description" content="Free Web tutorials">
+<!--Define keywords for search engines-->
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+<!--Define the author of a page-->
+<meta name="author" content="John Doe">
+<!--Refresh document every 30 seconds-->
+<meta http-equiv="refresh" content="30">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Script-->
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+<!--Base-->
+<!--the base URL and base target for all relative URLs in a page:-->
+<base href="https://www.w3schools.com/images/" target="_blank">
+
+</head>
+<body>
+<p id="demo" title="This is tooltip">Good Morning</p>
+<button type="button" onclick="myFunction()">Try it</button>
+</body>
+</html>
