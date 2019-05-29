@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form</title>
+</head>
+<body>
+<!--defines a form that is used to collect user input--> 
+
+<form>
+<!--Text input-->
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+<!--Radio button-->
+    <input type="radio" name="gender" value="male" checked>Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br> 
+</form>
+<form action="/action_page.php" target="_blank" method="GET"><!--default is _self-->
+    <!--Action attribute defines the action to be performed when the form is submitted.-->
+    <!--Submit button-->
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit"><br>
+</form>
+<!--Method GET vs POST-->
+<!--GET show data/ POST dont show data-->
+<!--if the name attribute is omitted, the data of that input field will not be sent at all.-->
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<!--Grouping Form Data with <fieldset>-->
+<form action="/action_page.php">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse"><br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>    
+</body>
+</html>
