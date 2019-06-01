@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Elements</title>    
+</head>
+<body>
+    <h2>The input element</h2> 
+    <form action="/action_page.php">
+        Enter your name:
+        <input name="firstname" type="text">
+        <br><br>
+        <input type="submit">
+    </form>
+    <h2>The select element</h2>
+    <form action="/action_page.php">
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="honda">Honda</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <h2>Allow multiple selection(hold down ctrl/command ))/h2>
+    <form action="/action_page.php">
+        <select name="cars" size="3" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="honda">Honda</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <h2>The textarea element(multiple line input)</h2>
+    <h5>rows: number of limes cols: width of a text area</h5>
+    <h5>can use CSS instead (style="width:200px; height:600px;")</h5>
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <h2>The button element</h2>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <h2>HTML5 datalist element</h2>
+    <h5>a list of pre-defined options for an input element.</h5>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Microsoft Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+        </datalist>
+    </form>
+    <h2>HTML5 output element</h2>
+    <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="20">
+        100 + 
+        <input type="number" id="b" name="b" value="0">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
